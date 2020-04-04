@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="/static/css/navigation.css" rel="stylesheet" />
+    <link href="/static/css/form.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900" />
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">LOGO</a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                    <li id="Home">
+                        <a href="/">Home</a>
+                    </li>
+                    <li id="Users"><a href="#">About</a></li>
+                    <li><a href="#">Services</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#!">Web Design</a></li>
+                            <li><a href="#!">Web Development</a></li>
+                            <li><a href="#!">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    {% block form %}{% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="/static/js/navigation.js"></script>
+</body>
+
+</html>
